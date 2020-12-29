@@ -15,10 +15,25 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #000000;1
+  color: #000000;
 }
-
-h1, h2, h3, h4 {
+pre {
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+}
+h3 {
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #000000;
+}
+h1, h2, h4 {
   font-family: 'Libre Caslon Text', serif;
   font-size: 36px;
   font-weight: 300;
@@ -37,38 +52,39 @@ h2 {
 
 h3 {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 500;
 }
 h4 {
-  font-size: 0.85em;
+  font-size: 0.75em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
 a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #ffffff;
+  color: #000000;
 }
 a:hover
 a:focus {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #ffffff;
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #ffffff;
+  color: #000000;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #000000;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 8px;
   border-radius: 25px;
-  border-bottom: 2px solid #000000; /* width of the border, type, color */
+  border-bottom: 0px solid #000000; /* width of the border, type, color */
   transition: 0.1s;
 }
 .button:hover {
@@ -82,14 +98,27 @@ a:active { /* selected link */
   color: #ffffff;
 }
 .button.contact {
-  background-color: transparent;
-  color: #000000;
-  text-transform: uppercase;
+  background-color: black;
+  color: #FFFFFF;
   border: 2px solid #000000;
 }
 .button.contact:hover {
   display: inline-block;
-  background-color: black;
+  background-color: transparent;
+  color: #000000;
+  font-weight: 700;
+}
+.button.normal {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-weight: 400;
+  border: 2px #000000;
+  border-radius: 25px
+  padding: 14px;
+  transition: 0.1s;
+}
+.button.normal:hover {
+  background-color: #000000;
   color: #ffffff;
   font-weight: 700;
 }
