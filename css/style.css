@@ -17,6 +17,14 @@ body {
   line-height: 1.6;
   color: #000000;
 }
+header {
+  background-color: gray;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin: 10px;
+}
 pre {
   background-color: white;
   font-family: 'Quicksand', sans-serif;
@@ -98,14 +106,14 @@ a:active { /* selected link */
   color: #ffffff;
 }
 .button.contact {
-  background-color: black;
-  color: #FFFFFF;
+  background-color: transparent;
+  color: #000000;
   border: 2px solid #000000;
 }
 .button.contact:hover {
   display: inline-block;
-  background-color: transparent;
-  color: #000000;
+  background-color: #000000;
+  color: #FFFFFF;
   font-weight: 700;
 }
 .button.normal {
