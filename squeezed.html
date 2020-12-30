@@ -13,21 +13,20 @@
 </head>
 <body>
 <!--Header-->
-    <header>
-      <div id="logo">
-        <img src="img/logo.png" width="80px" height="64px" media="(max-width:767px)">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">My Work</a></li>
-          <li><a href="illustration.html">Illustration</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-          <a href="https://www.linkedin.com/in/lohella/" target="_blank" height="64px" width="64px">
-            <svg id="Layer_1" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24"
-            xml:space="preserve"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="32" height="32" preserveAspectRatio="x50Y50 meet">
+<header>
+  <div class="container">
+    <img src="img/logo.png" media="(max-width:767px)">
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">My Work</a></li>
+        <li><a href="illustration.html">Illustration</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+        <a href="https://www.linkedin.com/in/lohella/" target="_blank" height="64px" width="64px">
+          <svg id="Layer_1" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24"
+          xml:space="preserve"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="32" height="32" preserveAspectRatio="x50Y50 meet">
               <style type="text/css">
               .st0{fill:#5F6B89;}
               .st1{fill:#EF7F5E;}
@@ -116,43 +115,37 @@
 <!--End Header-->
 
 <!--Hero-->
-  <div>
-    <div>
-      <h1>SQUEEZED</h1>
-        <p>
-          A web app for job seekers in tech to call experts and HR professionals already in their
-          LinkedIn network for interview advice.
-        </p>
-    </div>
-  </div>
-  <!--End Hero-->
-
+<div id="hero">
+  <div class="container">
+    <div class="row">
+    <h1>SQUEEZED</h1>
+      <p>
+        A web app for job seekers in tech to call experts and HR professionals already in their
+        LinkedIn network for interview advice.
+      </p>
 <!--Process-->
-  <div><!-- open row that holds (2) columns for project -->
-    <div><!-- open first column (used for image) -->
       <picture>
         <source media="(max-width: 367px)" srcset="img/Squeezed/intro@1.png">
-        <source media="(max-width: 300px)" srcset="img/Squeezed/intro@05.png">
+        <source media="(min-width: 200px)" srcset="img/Squeezed/intro@05.png">
         <img src="img/Squeezed/intro@1.png" alt="Intro">
-
       </picture>
-
-      <div>
-        <div>
-        <h3>
-            Role
-        </h3>
-          <picture>
-            <source media="(max-width: 367px)" srcset="img/Squeezed/icons/super@1.png">
-            <source media="(min-width: 200px)" srcset="img/squeezed/icons/super@05.png">
-            <img src="img/Squeezed/icons/super@1.png" alt="Role">
-          </picture>
-          <p>
-            UX/UI Designer
-          </p>
-        <h3>
+    </div>
+<div><!-- open row that holds (2) columns for project -->
+  <div><!-- open first column (used for image) -->
+    <h3>
+      Role
+    </h3>
+      <picture>
+        <source media="(max-width: 367px)" srcset="img/Squeezed/icons/super.png">
+        <source media="(min-width: 200px)" srcset="img/squeezed/icons/super@05.png">
+        <img src="img/Squeezed/icons/super.png" alt="Role">
+      </picture>
+        <p>
+          UX/UI Designer
+        </p>
+          <h3>
             Client
-        </h3>
+          </h3>
       </div>
           <picture>
             <source media="(max-width: 367px)" srcset="img/Squeezed/icons/client.png">
@@ -165,40 +158,44 @@
         <h3>
           Tools
         </h3>
-          <img src="img/Squeezed/icons/sketch.png" height="34px" width="36px" alt="Intro" class="responsive">
+          <picture>
+            <source media="(max-width: 367px)" srcset="img/Squeezed/icons/sketch.png">
+            <source media="(min-width: 200px)" srcset="img/Squeezed/icons/sketch.png">
+            <img src="img/Squeezed/icons/sketch.png" alt="Sketch">
+          </picture>
             <p>
               Sketch
             </p>
-          <img src="img/Squeezed/icons/figma.png" height="34px" width="28px" alt="Intro" class="responsive">
+          <img src="img/Squeezed/icons/figma.png" alt="Figma App" class="responsive">
             <p>
               Figma
             </p>
-          <img src="img/Squeezed/icons/adobe cc.png" height="34px" width="34px" alt="Intro" class="responsive">
+          <img src="img/Squeezed/icons/adobe cc.png" alt="Adobe CC Suite" class="responsive">
             <p>
               Adobe Creative Suite
             </p>
-          <img src="img/Squeezed/icons/invision.png" height="34px" width="34px" alt="Intro" class="responsive">
+          <img src="img/Squeezed/icons/invision.png" alt="InVision" class="responsive">
             <p>
               InVision
             </p>
-      </div>
+              <a href="https://projects.invisionapp.com/share/JNYMCPRY45R" class="button">See Prototype
+              </a>
         </div>
-          <a href="https://projects.invisionapp.com/share/JNYMCPRY45R" class="button">See Prototype
-          </a>
-
+      </div>
+      <div class="container">
           <h2>
               Process
           </h2>
-            <img src="img/squeezed/icons/1 key.png" height="34px" width="34px" alt="Intro" class="responsive">
-              <h3>
-                Think
-              </h3>
-                <pre>
-                  Competitive Analysis
-                  User Stories
-                  Surveys & Interviews
-                </pre>
-            <img src="img/squeezed/icons/2 key.png" height="34px" width="34px" alt="Intro" class="responsive">
+            <img src="img/squeezed/icons/1 key.png" alt="1" max width= 2000px class="responsive">
+          <h3>
+            Think
+          </h3>
+            <pre>
+              Competitive Analysis
+              User Stories
+              Surveys & Interviews
+            </pre>
+            <img src="img/squeezed/icons/2 key.png" alt="2" max width=2000px class="responsive">
               <h3>
                 Make
               </h3>
@@ -210,7 +207,7 @@
   Prototypes
   Design Library
 </pre>
-            <img src="img/squeezed/icons/3 key.png" height="34px" width="34px" alt="Intro" class="responsive">
+            <img src="img/squeezed/icons/3 key.png" alt="3" class="responsive">
               <h3>
                 Check
               </h3>
@@ -223,7 +220,8 @@
       </div><!-- open second column (used for text) -->
 
 <!-- CHAPTER ONE -->
-      <img src="img/squeezed/icons/1 key.png" height="34px" width="34px" alt="Intro" class="responsive"></br>
+  <div class="container">
+      <img src="img/squeezed/icons/1 key.png" alt="Intro" class="responsive"></br>
         <h1>
           Think
         </h1>
@@ -260,11 +258,12 @@
             spot weaknesses in their user experience, and make better-informed decisions about
             the products’ overall strategy
           </p>
-            <img src="img/squeezed/icons/rooftop slushie.png" height="34px" width="34px" alt="Intro" class="responsive">
+        <div class="row">
+            <img src="img/squeezed/icons/rooftop slushie.png" max width="2000px" alt="Rooftop Slushie" class="responsive">
               <b>
                 Rooftop Slushie
               </b>
-            <img src="img/squeezed/icons/dr+.png" height="34px" width="34px" alt="Intro" class="responsive">
+            <img src="img/squeezed/icons/dr+.png" alt="Dr on Demand" class="responsive">
               <b>
                 Doctor on Demand
               </b>
@@ -288,7 +287,7 @@
                     <source media="(min-width: 320px)" srcset="img/squeezed/competitive@1.png">
                     <img src="img/squeezed/competitive@1.png" alt="Competitive Analysis">
                   </picture>
-
+        <div class="row">
           <h2>
             User Stories -> Visual Representation
           </h2>
@@ -307,6 +306,7 @@
                 <source media="(min-width: 320px)" srcset="img/squeezed/Visual-Graph@1.png">
                 <img src="img/squeezed/Visual-Graph@1.png" alt="Visual Representation">
               </picture>
+        </div>
           <h2>
             Survey Results
           </h2>
@@ -766,7 +766,7 @@
 
 <!--Footer-->
   <footer>
-  <div>
+    <div class="container">
       <h2>Get in Touch</h2>
       <p>
         Do you like what you see and want to discuss opportunities?

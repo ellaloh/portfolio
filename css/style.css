@@ -109,14 +109,14 @@ a:active { /* selected link */
   color: #ffffff;
 }
 .button.contact {
-  background-color: transparent;
-  color: #000000;
-  border: 2px solid #000000;
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid #000000;
 }
 .button.contact:hover {
   display: inline-block;
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #000000;
   font-weight: 700;
 }
 .button.normal {
@@ -135,9 +135,14 @@ a:active { /* selected link */
 }
 .h1 + paragraph {
   line-height: 1.4;
-  }
-
+}
 /* Layout styling */
 .container {
-  padding: 30px 30px;
+  padding: 0 30px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#hero h2, h3, h4,  {
+  text-align: center; /* Centers text */
 }
