@@ -15,10 +15,11 @@
 <!--Header-->
     <header>
       <div id="logo">
-        <img src="img/logo.png" width="80px" height="64px" media="(max-width:767px)">
+      <div class="container">
+        <img src="img/logo.png" media="(max-width:2000px)">
       </div>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">My Work</a></li>
           <li><a href="illustration.html">Illustration</a></li>
           <li><a href="resume.html">Resume</a></li>
@@ -122,8 +123,8 @@
 <!--End Header-->
 
 <!--Hero-->
-  <div>
-    <div>
+  <div id="hero">
+    <div class="container">
       <h1>Hi, my name is Ella</h1>
       <span>I'm a UX/UI Designer with a background in Fashion.</span>
       <p>I am experienced in developing and optimizing large-scale product lines and solving design problems while communicating with a variety of international clients and geographically distributed colleagues. Driven by cross-team collaboration, user-centric, engaging and appealing user experiences in the San Francisco Bay Area.</p>
@@ -132,38 +133,41 @@
   <!--End Hero-->
 
 <!--Work-->
+<div>
   <div>
-    <div>
-      <h2>Work</h2>
-      <div class="card_grid"><!-- open row that holds (2) columns for project -->
-        <div class="project_card"><!-- open first column (used for image) -->
-          <p>
+    <div id="work">
+      <div class="container">
+        <h2>Work</h2>
+          <div class="row">
             <a href="squeezed.html">
               <source srcset="img/Squeezed/Squeezed-Cover-Mockup.jpg" media="(max-width:767px)">
-                <img src="img/Squeezed/Squeezed-Cover-Mockup.jpg" alt="Squeezed web app" width="600" height="450" />
+              <img src="img/Squeezed/Squeezed-Cover-Mockup.jpg" alt="Squeezed web app" width="600" height="450" />
             </a>
-          </p>
-        </div><!-- end first column -->
-      </div><!-- open second column (used for text) -->
-          <h3>Squeezed</h3>
-          <p>
+    </div><!-- end first column -->
+  </div><!-- open second column (used for text) -->
+      <div class="container">
+        <h3>Squeezed</h3>
+          <div class="row">
+            <p>
               Squeezed provides tech career advice within a responsive web app.
               It features chat and video conversations so customers can have the best chance at
               receiving a technical offer from a top company.
-          </p>
-          <p>
+            </p>
+            <p>
               Skills: Sketch, Figma, InVision, Adobe Photoshop
-          </p>
-              <a href="">Read more</a>
-        </div><!-- end second column -->
-      </div><!-- end row that holds (2) columns for project -->
-      <div class="project_card">
+            </p>
+            <a href="">Read more</a>
+      </div><!-- end second column -->
+    </div><!-- end row that holds (2) columns for project -->
+    <div id="hero">
+      <div class="container">
           <picture>
             <source srcset="img/shesohso/cover-final.png" media="(max-width:767px)">
             <img src="img/shesohso/cover-final.png" alt="She's Oh So" width="600" height="450" />
           </picture>
       </div>
-      <div>
+    <div id="hero">
+      <div class="container">
             <h3>She'sOhSo</h3>
             <p>
               A web platform that engages and bolsters women at an early age through
@@ -177,7 +181,8 @@
         </div><!-- end second column -->
       </div><!-- end row that holds (2) columns for project -->
 
-      <div class="project_card">
+    <div id="hero">
+      <div class="container">
           <img src="img/tiny jungle/cover.png" alt="Tiny Jungle web app"width="600" height="450"/>
           <div>
               <h3>Tiny Jungle</h3>
@@ -191,7 +196,8 @@
         </div><!-- end second column -->
       </div><!-- end row that holds (2) columns for project -->
 
-      <div class="project_card">
+    <div id="hero">
+      <div class="container">
           <img src="img/bio/intro.png" alt="Bio web app"width="600" height="450"/>
         <div>
           <h3>Bio</h3>
@@ -203,7 +209,8 @@
         </div><!-- end second column -->
       </div><!-- end row that holds (2) columns for project -->
 
-      <div class="project_card">
+    <div id="hero">
+      <div class="container">
           <img src="img/spodio/intro.png" alt="SPODIO Take Home Assessment"width="600" height="450"/>
           <div>
           <h3>Sportsbook Case Study</h3>
@@ -220,32 +227,18 @@
 
 <!--Footer-->
   <footer>
-  <div>
-      <h1>Get in Touch</h1>
-      <p>
-        Do you like what you see and want to discuss opportunities? Please get in touch. Call:
-        <a href="tel:+491234567">408 123 4567</a> or Skype me at <a href="skype:ellaloh">ellaloh</a> Prefer sending an email?
-      </p>
-        <footer id="contact">
-        </footer>
-        <a href="#contact">Contact</a>
-
-<!--Footer-->
-  <div>
-    <h2>Get in Touch</h2>
-      <p>
-        Do you like what you see and want to discuss opportunities?
-      </p>
-      <footer id="contact">
-      </footer>
-      <a href="mailto:ella.loh11@gmail.com" class="button contact">Contact Me!</a>
-  </div>
-<!--End Footer-->
-      <p>
-        Copyright Ella Loh 2020
-      </p>
-  </div>
+    <div class="container">
+      <h2>Get in Touch</h2>
+        <p>
+          Do you like what you see and want to discuss opportunities?
+        </p>
+          <a href="mailto:ella.loh11@gmail.com" class="button contact">Contact Me!</a>
+          <p>
+            Copyright Ella Loh 2020
+          </p>
+    </div>
   </footer>
+<!--End Footer-->
 
   </body>
 </html>

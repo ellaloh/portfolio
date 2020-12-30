@@ -9,6 +9,9 @@ Purple Accent: BF9DD7
 font-family: 'Source Sans Pro', sans-serif; /* not sure how to introduce this
 */
 
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   font-family: 'Quicksand', sans-serif;
@@ -23,7 +26,7 @@ header {
   padding-right: 5px;
   padding-bottom: 15px;
   padding-left: 5px;
-  margin: 10px;
+  margin: 0 auto;
 }
 pre {
   background-color: white;
@@ -133,3 +136,8 @@ a:active { /* selected link */
 .h1 + paragraph {
   line-height: 1.4;
   }
+
+/* Layout styling */
+.container {
+  padding: 30px 30px;
+}
