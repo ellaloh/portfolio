@@ -12,6 +12,9 @@ font-family: 'Source Sans Pro', sans-serif; /* not sure how to introduce this
 * {
   box-sizing: border-box;
 }
+main {
+  padding-top: 133px;
+}
 body {
   background-color: white;
   font-family: 'Quicksand', sans-serif;
@@ -19,14 +22,19 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
+  text-align: center;
+  padding: 10px 0;
 }
 header {
-  background-color: gray;
+  background-color: transparent;
   padding-top: 10px;
   padding-right: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-left: 5px;
   margin: 0 auto;
+  postion: fixed;
+  display: block;
+  width: 100%;
 }
 pre {
   background-color: white;
@@ -77,10 +85,6 @@ a {
   color: #000000;
   text-decoration: none; /* No underlining */
 }
-a:visited { /* visited link */
-  color: #000000;
-}
-a:hover
 a:focus {
   color: #ffffff;
   text-decoration: none; /* Underlining when hovering over a link */
@@ -136,13 +140,65 @@ a:active { /* selected link */
 .h1 + paragraph {
   line-height: 1.4;
 }
+
 /* Layout styling */
 .container {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 15px 5px; /* 15px top and bottom, 0 left and right */
+  column-count: 2;
+}
+#hero {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  float: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: gray;
 }
 #hero h2, h3, h4,  {
-  text-align: center; /* Centers text */
+  text-align: center;
+}
+#footer {
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+  padding: 20px 0;
+}
+.logo {
+  max-width: 100px;
+}
+nav > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+  padding: 0 15px;
+  font weight: 600;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  position: relative;
+  float: right;
+  width: 100%;
+  display: inline-block;
+}
+.navbar {
+  margin: 5px auto; /* No spacing to top and bottom and auto spacing to left and right */
+  width: 50%;
+  display: block;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 10; /* Position the navbar at the top of the page */
+}
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  padding: auto 15px;
+  text-decoration: none;
 }
