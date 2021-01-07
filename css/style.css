@@ -147,14 +147,18 @@ a:active { /* selected link */
 }
 .row {
   margin: 15px 5px; /* 15px top and bottom, 0 left and right */
-  column-count: 2;
 }
-#hero {
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#hero span{
   padding: 20px 0;
   margin: 0 auto;
   width: 100%;
-  display: inline-block;
-  text-align: center;
+  display: block;
+  text-align: left;
   float: none;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
@@ -210,12 +214,15 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right
-    margin-top: 4px;
+    top: 4px;
   }
+  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
+  float: left;
+  width: 50%;
+  padding: 0 10px;
 }
 /* ==============================
 Large devices (1024px or larger)
