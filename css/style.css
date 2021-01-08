@@ -22,15 +22,15 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
 }
 header {
-  background-color: transparent;
+  background-color: #FFFFFF;
   padding-top: 10px;
   padding-right: 5px;
-  padding-bottom: 10px;
-  padding-left: 5px;
+  padding-bottom: 40px;
+  padding-left: 0px;
   margin: 0 auto;
   display: block;
   width: 100%;
@@ -71,7 +71,7 @@ h2 {
 
 h3 {
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: 400;
 }
 h4 {
   font-size: 0.75em;
@@ -93,6 +93,7 @@ a:active { /* selected link */
   color: #000000;
 }
 .button {
+  font-size: 14px;
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #000000;
   color: #ffffff; /* needed to override the default link color */
@@ -124,6 +125,7 @@ a:active { /* selected link */
   font-weight: 700;
 }
 .button.normal {
+  font-size: 15px;
   background-color: #FFFFFF;
   color: #000000;
   font-weight: 400;
@@ -169,21 +171,27 @@ a:active { /* selected link */
 #hero h2, h3, h4,  {
   text-align: center;
 }
+#hero h1  {
+  text-align: left;
+}
 #footer {
   text-align: center;
-  width: 80%;
+  width: 100%;
   display: inline-block;
   padding: 20px 0;
 }
 .logo {
   max-width: 100px;
+  float: left;
+  padding: 10px;
 }
 nav > ul > li > a {
-  display: inline-block;
-  width: 100%;
-  list-style-type: none;
   padding: 0 15px;
   font weight: 600;
+}
+nav > ul {
+ list-style-type: none;
+ display: block;
 }
 selector {
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
@@ -193,18 +201,42 @@ selector {
   display: inline-block;
 }
 .navbar {
+  background-color: #FFFFFF;
   margin: 5px auto; /* No spacing to top and bottom and auto spacing to left and right */
-  width: 50%;
+  width: 100%;
   display: block;
   position: fixed; /* Set the navbar to fixed position */
-  top: 10; /* Position the navbar at the top of the page */
+  top: 5; /* Position the navbar at the top of the page */
 }
 /* Links inside the navbar */
 .navbar a {
   float: left;
   display: block;
-  padding: auto 15px;
+  padding: 25px 10px;
   text-decoration: none;
+}
+.social {
+  float: right;
+  display: block;
+  padding: 0 10px;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: left;
+  float: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: gray;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -215,12 +247,11 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
   nav {
-    width: auto;
-    float: right
+    width: 100%;
+    float: left;
     top: 4px;
   }
   [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
-  float: left;
   width: 50%;
   padding: 0 10px;
 }
