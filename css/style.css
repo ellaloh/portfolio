@@ -101,13 +101,15 @@ a:active { /* selected link */
   padding: 8px;
   border-radius: 25px;
   border-bottom: 0px solid #000000; /* width of the border, type, color */
-  transition: 0.1s;
+  transition-duration: 0.1s;
+  transition-property: opacity;
 }
 .button:hover {
   background-color: #F7CF39;
   color: #000000;
   font-weight: 600;
   text-decoration: none;
+  opacity: 0.5;
 }
 .button:active {
   background-color: #000000;
@@ -117,12 +119,15 @@ a:active { /* selected link */
   background-color: black;
   color: #ffffff;
   border: 1px solid #000000;
+  transition-duration: 0.1s;
+  transition-property: opacity;
 }
 .button.contact:hover {
   display: inline-block;
   background-color: #FFFFFF;
   color: #000000;
   font-weight: 700;
+  opacity: 0.5;
 }
 .button.normal {
   font-size: 15px;
@@ -161,7 +166,6 @@ a:active { /* selected link */
   width: 100%;
   display: block;
   text-align: left;
-  float: none;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -202,11 +206,10 @@ selector {
 }
 .navbar {
   background-color: #FFFFFF;
-  margin: 5px auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 5px 0; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
   display: block;
   position: fixed; /* Set the navbar to fixed position */
-  top: 5; /* Position the navbar at the top of the page */
 }
 /* Links inside the navbar */
 .navbar a {
