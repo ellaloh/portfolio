@@ -179,7 +179,7 @@ a:active { /* selected link */
   text-align: left;
 }
 #footer {
-  text-align: center;
+  text-align: left;
   width: 100%;
   display: inline-block;
   padding: 20px 0;
@@ -257,6 +257,21 @@ Medium devices (640px and larger)
   [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
   width: 50%;
   padding: 0 10px;
+}
+@keyframes color-change {
+  0% {fill: #ffffff;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.words {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes words-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.words-move {
+  animation: 30s words-move infinite alternate linear;
 }
 /* ==============================
 Large devices (1024px or larger)
