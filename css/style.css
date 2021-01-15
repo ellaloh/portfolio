@@ -31,7 +31,7 @@ header {
   padding-right: 5px;
   padding-bottom: 40px;
   padding-left: 0px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: block;
   width: 100%;
   text-align: unset; /* resets the property to either its initial (original) value */
@@ -48,7 +48,7 @@ h3 {
   background-color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.6;
   color: #000000;
 }
@@ -82,14 +82,17 @@ img {
   width: 100%;
 }
 a {
-  color: #000000;
+  color: #686868;
   text-decoration: none; /* No underlining */
 }
 a:focus {
   color: #ffffff;
-  text-decoration: none; /* Underlining when hovering over a link */
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
+  color: #686868;
+}
+a:hover {
   color: #000000;
 }
 .button {
@@ -145,7 +148,7 @@ a:active { /* selected link */
   font-weight: 700;
 }
 .h1 + paragraph {
-  line-height: 1.4;
+  line-height: 0.8;
 }
 
 /* Layout styling */
@@ -153,7 +156,7 @@ a:active { /* selected link */
   padding: 0 20px;
 }
 .row {
-  margin: 15px 5px; /* 15px top and bottom, 0 left and right */
+  margin: 50px 5px; /* 15px top and bottom, 0 left and right */
   display: flex; /* handles the margins the container between columns */
 }
 .row::after {
@@ -161,16 +164,19 @@ a:active { /* selected link */
   clear: both;
   display: table;
 }
+.hero.row {
+  margin: 0; /* 15px top and bottom, 0 left and right */
+  display: flex; /* handles the margins the container between columns */
+}
 #hero span{
-  padding: 20px 0;
-  margin: 0 auto;
-  width: 75%;
+  padding: 0;
+  width: 65%;
   display: block;
   text-align: left;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.8;
   color: gray;
 }
 #hero h2, h3, h4,  {
@@ -186,13 +192,15 @@ a:active { /* selected link */
   padding: 20px 0;
 }
 .logo {
-  max-width: 100px;
+  max-width: 70px;
   float: left;
-  padding: 10px;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 20px 15px;
   font weight: 600;
+  float: left;
+  display: block;
+  text-decoration: none;
 }
 nav > ul {
  list-style-type: none;
@@ -206,19 +214,14 @@ selector {
   display: inline-block;
 }
 .navbar {
-  background-color: #FFFFFF;
+  background-color: #transparent;
   margin: 5px 0; /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 30px 0;
   width: 100%;
   display: block;
-  position: fixed; /* Set the navbar to fixed position */
+  position: absolute; /* Set the navbar to fixed position */
 }
 /* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  padding: 25px 10px;
-  text-decoration: none;
-}
 .social {
   float: right;
   display: block;
@@ -228,6 +231,7 @@ selector {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden; /* */
 }
 .about {
   padding: 20px 0;
@@ -241,23 +245,6 @@ selector {
   font-weight: 400;
   line-height: 1.6;
   color: gray;
-}
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-  nav {
-    width: 100%;
-    float: left;
-    top: 4px;
-  }
-  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
-  width: 50%;
-  padding: 0 10px;
 }
 @keyframes color-change {
   0% {fill: #2e2e2e}
@@ -273,6 +260,23 @@ Medium devices (640px and larger)
 }
 .words-move {
   animation: 25s words-move infinite alternate linear;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: left;
+    top: 4px;
+  }
+  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
+  width: 50%;
+  padding: 0 10px;
 }
 /* ==============================
 Large devices (1024px or larger)
