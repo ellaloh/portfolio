@@ -34,7 +34,6 @@ header {
   margin: 50px auto;
   display: block;
   width: 100%;
-  text-align: unset; /* resets the property to either its initial (original) value */
 }
 pre {
   background-color: white;
@@ -60,7 +59,7 @@ h1, h2, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 2.15em;
   font-weight: 700;
 }
 
@@ -153,24 +152,31 @@ a:hover {
 
 /* Layout styling */
 .container {
-  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 50px;
+  overflow: hidden; /* */
 }
 .row {
   margin: 50px 5px; /* 15px top and bottom, 0 left and right */
   display: flex; /* handles the margins the container between columns */
 }
+
+/* Clear floats after the columns */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .hero.row {
   margin: 0; /* 15px top and bottom, 0 left and right */
   display: flex; /* handles the margins the container between columns */
 }
 #hero span{
   padding: 0;
-  width: 65%;
+  width: 70%;
   display: block;
   text-align: left;
   font-family: 'Quicksand', sans-serif;
@@ -192,7 +198,7 @@ a:hover {
   padding: 20px 0;
 }
 .logo {
-  max-width: 70px;
+  max-width: 60px;
   float: left;
 }
 nav > ul > li > a {
@@ -227,12 +233,6 @@ selector {
   display: block;
   padding: 0 10px;
 }
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; /* */
-}
 .about {
   padding: 20px 0;
   margin: 0 auto;
@@ -265,23 +265,28 @@ selector {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-  nav {
-    width: auto;
-    float: left;
-    top: 4px;
-  }
-  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
-  width: 50%;
+  [class*="col-md-6"] {
+  width: 100%;
   padding: 0 10px;
+  float: left;
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset; /* resets the property to either its initial (original) value */
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: left;
+    margin-top: 4px;
+  }
+  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
+  width: 50%;
+  padding: 0 10px;
+  float: left;
 }
 /* ==============================
 X-large devices (1440px or larger)
