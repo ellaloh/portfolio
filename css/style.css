@@ -133,6 +133,7 @@ a:hover {
   border: 1px solid #000000;
   transition-duration: 0.1s;
   transition-property: opacity;
+  margin: 20px 0;
 }
 .button.contact:hover {
   display: inline-block;
@@ -169,7 +170,7 @@ a:hover {
   overflow: hidden; /* */
 }
 .row {
-  margin: 50px 5px; /* 15px top and bottom, 0 left and right */
+  margin: 40px 5px; /* 15px top and bottom, 0 left and right */
   display: flex; /* handles the margins the container between columns */
 }
 
@@ -202,7 +203,8 @@ a:hover {
   text-align: left;
 }
 #footer {
-  text-align: left;
+  text-align: center;
+  float: center;
   width: 100%;
   display: inline-block;
   padding: 20px 0;
