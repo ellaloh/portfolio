@@ -44,16 +44,13 @@ pre {
   color: #000000;
 }
 h3 {
-  background-color: white;
+  background-color: transparent;
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  font-weight: 800;
   line-height: 1.6;
   color: #000000;
 }
 h1, h2, h4 {
   font-family: 'Libre Caslon Text', serif;
-  font-size: 36px;
   font-weight: 300;
   color: #000000;
   line-height: 1.4;
@@ -70,14 +67,14 @@ h2 {
 
 h3 {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 550;
 }
 h4 {
   font-size: 0.75em;
   font-weight: 400;
 }
 h5 {
-  background-color: white;
+  background-color: transparent;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2em;
   font-weight: 500;
@@ -88,12 +85,12 @@ h5 {
   margin: 5px 20px;
 }
 h6 {
-  background-color: white;
+  background-color: transparent;
   font-family: 'Quicksand', sans-serif;
   font-size: 2.8em;
   font-weight: 550;
   line-height: 0;
-  color: #040404;
+  color: #F0F0F0;
   text-align: left;
 }
 img {
@@ -180,7 +177,7 @@ a:hover {
 }
 .row {
   margin: 40px 5px; /* 15px top and bottom, 0 left and right */
-  display: flex; /* handles the margins the container between columns */
+   /* handles the margins the container between columns */
 }
 
 /* Clear floats after the columns */
@@ -189,14 +186,13 @@ a:hover {
   clear: both;
   display: table;
 }
-
 .hero.row {
   margin: 0; /* 15px top and bottom, 0 left and right */
-  display: flex; /* handles the margins the container between columns */
+ /* handles the margins the container between columns */
 }
 #hero span{
   padding: 0;
-  width: 75%;
+  width: 110%;
   display: block;
   text-align: left;
   font-family: 'Quicksand', sans-serif;
@@ -229,11 +225,12 @@ a:hover {
   float: left;
 }
 nav > ul > li > a {
-  padding: 20px 15px;
+  padding: 0 15px;
   font weight: 600;
   float: left;
   display: block;
   text-decoration: none;
+  text-transform: lowercase;
 }
 nav > ul {
  list-style-type: none;
@@ -248,11 +245,12 @@ selector {
 }
 .navbar {
   background-color: #transparent;
-  margin: 0; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 10px; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
   display: block;
   position: absolute; /* Set the navbar to fixed position */
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 500;
 }
 /* Links inside the navbar */
 .social {
