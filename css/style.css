@@ -149,7 +149,7 @@ a:hover {
   font-weight: 400;
   border: 2px #000000;
   border-radius: 25px
-  padding: 14px;
+  padding: 15px;
   transition: 0.1s;
 }
 .button.normal:hover {
@@ -187,7 +187,7 @@ a:hover {
 }
 #hero span{
   padding: 0;
-  width: 70%;
+  width: 75%;
   display: block;
   text-align: left;
   font-family: 'Quicksand', sans-serif;
@@ -201,6 +201,7 @@ a:hover {
 }
 #hero h1  {
   text-align: left;
+  padding-top: 30px;
 }
 #footer {
   text-align: center;
@@ -238,17 +239,24 @@ selector {
 }
 .navbar {
   background-color: #transparent;
-  margin: 5px 0; /* No spacing to top and bottom and auto spacing to left and right */
-  padding: 30px 0;
+  margin: 0; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
   display: block;
   position: absolute; /* Set the navbar to fixed position */
+  font-size: 20px;
 }
 /* Links inside the navbar */
 .social {
   float: right;
   display: block;
   padding: 0 10px;
+}
+.center {
+  text-align: center;
+  float: center;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
 }
 .about {
   padding: 20px 0;
