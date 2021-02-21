@@ -34,6 +34,7 @@ header {
   margin: 50px auto;
   display: block;
   width: 100%;
+  position:fixed;
 }
 pre {
   background-color: white;
@@ -309,10 +310,6 @@ selector {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset; /* resets the property to either its initial (original) value */
-    padding: 30px 0 13px;
-  }
   nav {
     width: auto;
     float: left;
@@ -335,11 +332,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset; /* resets the property to either its initial (original) value */
-    padding: 30px 0 13px;
-  }
+@media only screen and (min-width: 1024px) {\
   nav {
     width: auto;
     float: left;
