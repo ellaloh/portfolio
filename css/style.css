@@ -64,6 +64,7 @@ h1 {
 h2 {
   font-size: 1.65em;
   font-weight: 700;
+  padding-top:40px;
 }
 
 h3 {
@@ -197,7 +198,17 @@ a:hover {
 .hero.row {
   margin: 0; /* 15px top and bottom, 0 left and right */
  /* handles the margins the container between columns */
-}
+ }
+ .largefont {
+   color: #FF5555;
+   font-family:'Quicksand', sans-serif;
+   font-weight:400;
+ }
+ .quote {
+   font-family:'Garamond', serif;
+   font-size:24px;
+   font-weight:800;
+ }
 #hero span{
   padding: 0;
   width: 110%;
@@ -270,7 +281,7 @@ selector {
   text-align: center;
   width: 100%;
   display: block;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .center.challenge {
   text-align: left;
