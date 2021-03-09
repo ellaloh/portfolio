@@ -32,9 +32,12 @@ header {
   padding-bottom: 40px;
   padding-left: 0px;
   margin: 50px auto;
-  display: block;
-  width: 100%;
+  display: block; width: 100%;
   position:fixed;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 pre {
   background-color: white;
@@ -65,7 +68,6 @@ h1 {
 h2 {
   font-size: 1.65em;
   font-weight: 700;
-  padding-top:40px;
 }
 
 h3 {
@@ -358,7 +360,7 @@ Medium devices (640px and larger)
    .col-md-7 {
      width: 60%;
    }
-    .col-md-8 {
+   .col-md-8 {
        width: 70%;
    }
 /* ==============================
