@@ -13,7 +13,7 @@ font-family: 'Source Sans Pro', sans-serif; /* not sure how to introduce this
   box-sizing: border-box;
 }
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 body {
   background-color: white;
@@ -251,18 +251,6 @@ a:hover {
   padding: 10px 18px;
   float: left;
 }
-nav > ul > li > a {
-  padding: 0 15px;
-  font weight: 600;
-  float: left;
-  display: block;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-nav > ul {
- list-style-type: none;
- display: block;
-}
 selector {
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   position: relative;
@@ -331,20 +319,57 @@ selector {
 .words-move {
   animation: 25s words-move infinite alternate linear;
 }
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .logo {
+  padding-right: 0;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+nav > ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  nav {
-    width: auto;
+  nav
+  {
     float: left;
     margin-top: 4px;
+  }
+  nav > ul > li > a {
+    padding: 0 15px;
+    font weight: 600;
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  nav > ul {
+  margin: 2em 0;
+  }
+  .navtoggle.responsive nav {
+  padding: 24px 0 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+  padding: 0 0 10px;
   }
   [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
   padding: 0 10px;
   float: left;
   }
-
   .col-md-1 {
    width: 20%;
   }
