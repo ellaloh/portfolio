@@ -317,6 +317,9 @@ selector {
 .words-move {
   animation: 25s words-move infinite alternate linear;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -325,7 +328,7 @@ selector {
   position: absolute;
   right: 0;
   top: 2px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .navtoggle.responsive li  {
   display: block;
