@@ -27,8 +27,7 @@ body {
 }
 header {
   background-color: #FFFFFF;
-  padding-right: 5px;
-  padding-left: 0px;
+  padding: 10px 0 4px;
   display: inline-block; width: 100%;
   position:relative;
 }
@@ -259,8 +258,6 @@ selector {
 .navbar {
   background-color: transparent;
   margin: 10px; /* No spacing to top and bottom and auto spacing to left and right */
-  width: 100%;
-  display: inline-block;
   position: relative; /* Set the navbar to fixed position */
   font-size: 17px;
   font-weight: 500;
@@ -269,7 +266,7 @@ selector {
 .social {
   float: right;
   display: block;
-  padding: 0 10px;
+  padding: 12px 35px;
 }
 .center {
   text-align: center;
@@ -327,8 +324,8 @@ selector {
   padding-right: 0;
   position: absolute;
   right: 0;
-  top: 2px;
-  font-size: 18px;
+  top: 15px;
+  font-size: 20px;
 }
 .navtoggle.responsive li  {
   display: block;
@@ -357,7 +354,7 @@ Medium devices (640px and larger)
     text-transform: lowercase;
   }
   nav > ul {
-  margin: 2em 0;
+  margin: 1em 0;
   }
   .navtoggle.responsive nav {
   padding: 24px 0 0;
