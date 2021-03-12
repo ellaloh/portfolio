@@ -13,7 +13,7 @@ font-family: 'Source Sans Pro', sans-serif; /* not sure how to introduce this
   box-sizing: border-box;
 }
 main {
-  padding-top: 56px;
+  padding-top: 10px;
 }
 body {
   background-color: white;
@@ -27,13 +27,10 @@ body {
 }
 header {
   background-color: #FFFFFF;
-  padding-top: 10px;
   padding-right: 5px;
-  padding-bottom: 40px;
   padding-left: 0px;
-  margin: 50px auto;
-  display: block; width: 100%;
-  position:fixed;
+  display: inline-block; width: 100%;
+  position:relative;
 }
 img {
   max-width: 100%;
@@ -63,6 +60,7 @@ h1, h2, h4 {
 h1 {
   font-size: 2.15em;
   font-weight: 700;
+  padding-left: 9px;
 }
 
 h2 {
@@ -259,11 +257,11 @@ selector {
   display: inline-block;
 }
 .navbar {
-  background-color: #transparent;
+  background-color: transparent;
   margin: 10px; /* No spacing to top and bottom and auto spacing to left and right */
   width: 100%;
-  display: block;
-  position: absolute; /* Set the navbar to fixed position */
+  display: inline-block;
+  position: relative; /* Set the navbar to fixed position */
   font-size: 17px;
   font-weight: 500;
 }
@@ -340,11 +338,12 @@ nav > ul {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   nav
   {
     float: left;
     margin-top: 4px;
+    display: inline-block;
   }
   nav > ul > li > a {
     padding: 0 15px;
@@ -364,7 +363,8 @@ Medium devices (640px and larger)
     display: inline-block;
   }
   .navtoggle li:last-child {
-  padding: 0 0 10px;
+    padding: 0 0 10px;
+    display: none;
   }
   [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
   padding: 0 10px;
