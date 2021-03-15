@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Quicksand:wght@400;700&family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/aa366b9226.js" crossorigin="anonymous"></script>
   </head>
 
 <body>
@@ -17,16 +18,15 @@
   <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <img class="logo" src="img/logo.png" alt="logo">
-</div>
   <nav>
     <ul class="navbar">
       <li><a href="index.html">Work</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li><a href="about.html" onclick="myFunction()">About</a></li>
-      <li><a href="javascript:void(0);" class="logo" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+      <li><a href="javascript:void(0);" class="logo" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
     </ul>
   </nav>
-
+</div>
       <div class="social">
         <a href="https://www.linkedin.com/in/lohella/" target="_blank">
           <svg id="Layer_1" style="enable-background:new 0 0 24 24;" version="1.1"
@@ -211,15 +211,17 @@
 <br><br><br>
 <!--End About-->
 
-<script src="js/script.js"></script>
-  </body>
-</html>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</main>
 
 <!--Footer-->
 <footer>
   <div id="footer">
     <div class="container">
-
           <hr style="height:1px;width:70%;color:#B8B8B8">
             <h2>Get in Touch</h2>
             <p>
@@ -238,3 +240,5 @@
         </div>
       </div>
 </footer>
+</body>
+</html>

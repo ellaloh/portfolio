@@ -127,16 +127,12 @@ a:hover {
   font-weight: 400;
   padding: 8px;
   border-radius: 25px;
-  border-bottom: 0px solid #000000; /* width of the border, type, color */
-  transition-duration: 0.1s;
-  transition-property: opacity;
 }
 .button:hover {
-  background-color: #F7CF39;
+  background-color: #ffffff;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
-  opacity: 0.5;
 }
 .button:active {
   background-color: #000000;
@@ -146,31 +142,27 @@ a:hover {
   background-color: black;
   color: #ffffff;
   border: 1px solid #000000;
-  transition-duration: 0.1s;
-  transition-property: opacity;
   margin: 20px 0;
 }
 .button.contact:hover {
   display: inline-block;
   background-color: #FFFFFF;
   color: #000000;
-  font-weight: 700;
-  opacity: 0.5;
+  font-weight: 500;
 }
 .button.normal {
   font-size: 15px;
   background-color: #FFFFFF;
   color: #000000;
   font-weight: 400;
-  border: 2px #000000;
+  border: 3px #000000;
   border-radius: 25px
   padding: 15px;
-  transition: 0.1s;
 }
 .button.normal:hover {
   background-color: #000000;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
 }
 .h1 + paragraph {
   line-height: 0.8;
@@ -319,6 +311,9 @@ selector {
 }
 .navtoggle, .navtoggle.responsive {
   position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
 }
 .navtoggle li .logo {
   padding-right: 0;
