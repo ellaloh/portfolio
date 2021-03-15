@@ -266,7 +266,7 @@ selector {
 .social {
   float: right;
   display: block;
-  padding: 12px 35px;
+  padding: 12px 38px;
 }
 .center {
   text-align: center;
@@ -327,9 +327,6 @@ selector {
   top: 15px;
   font-size: 20px;
 }
-.navtoggle.responsive li  {
-  display: block;
-}
 nav > ul {
  list-style-type: none;
  padding: 0;
@@ -346,7 +343,7 @@ Medium devices (640px and larger)
     display: inline-block;
   }
   nav > ul > li > a {
-    padding: 0 15px;
+    padding: 0 12px;
     font weight: 600;
     float: left;
     display: inline-block;
@@ -365,6 +362,14 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     padding: 0 0 10px;
     display: none;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
   }
   [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
   padding: 0 10px;
