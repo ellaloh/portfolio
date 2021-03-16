@@ -120,13 +120,14 @@ a:hover {
   color: #000000;
 }
 .button {
-  font-size: 14px;
+  font-size: 13px;
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #000000;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 8px;
-  border-radius: 25px;
+  border-radius: 30px;
+  width: 125px;
 }
 .button:hover {
   background-color: #ffffff;
@@ -227,7 +228,7 @@ a:hover {
   padding: 20px 0;
 }
 .logo {
-  max-width: 70px;
+  max-width: 75px;
   float: left;
   padding-right: 10px;
 }
