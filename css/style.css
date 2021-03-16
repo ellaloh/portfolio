@@ -79,13 +79,13 @@ h4 {
 h5 {
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.2em;
+  font-size: 15px;
   font-weight: 500;
   line-height: 3.2;
   color: #000000;
   text-align: left;
-  padding: 0 45px;
-  margin: 5px 20px;
+  padding: 0 50px;
+  margin: 10px 20px;
 }
 h6 {
   background-color: transparent;
@@ -203,13 +203,13 @@ a:hover {
  }
 #hero span{
   padding: 0;
-  width: 110%;
+  width: 130%;
   display: block;
   text-align: left;
   font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
   color: gray;
 }
 #hero h2, h3, h4,  {
@@ -217,7 +217,7 @@ a:hover {
 }
 #hero h1  {
   text-align: left;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 #footer {
   text-align: center;
@@ -227,8 +227,9 @@ a:hover {
   padding: 20px 0;
 }
 .logo {
-  max-width: 60px;
+  max-width: 70px;
   float: left;
+  padding-right: 10px;
 }
 .logo.brand {
   max-width: 55px;
@@ -249,7 +250,8 @@ selector {
 }
 .navbar {
   background-color: transparent;
-  margin: 10px; /* No spacing to top and bottom and auto spacing to left and right */
+  color: #000000;
+  margin: 20px; /* No spacing to top and bottom and auto spacing to left and right */
   position: relative; /* Set the navbar to fixed position */
   font-size: 17px;
   font-weight: 500;
@@ -334,16 +336,15 @@ Medium devices (640px and larger)
   nav
   {
     float: left;
-    margin-top: 4px;
+    margin-top: 0;
     display: inline-block;
   }
   nav > ul > li > a {
-    padding: 0 12px;
+    padding: 0 25px;
     font weight: 600;
     float: left;
     display: inline-block;
     text-decoration: none;
-    text-transform: lowercase;
   }
   nav > ul {
   margin: 1em 0;
