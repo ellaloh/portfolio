@@ -188,7 +188,7 @@ a:hover {
   display: table;
 }
 .hero.row {
-  margin: 0; /* 15px top and bottom, 0 left and right */
+  margin: 10; /* 15px top and bottom, 0 left and right */
  /* handles the margins the container between columns */
  }
  .largefont {
@@ -345,6 +345,7 @@ Medium devices (640px and larger)
     float: left;
     display: inline-block;
     text-decoration: none;
+    color: #000000;
   }
   nav > ul {
   margin: 1em 0;
