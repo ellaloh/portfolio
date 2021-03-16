@@ -385,6 +385,9 @@ Medium devices (640px and larger)
   .col-md-2 {
      width: 25%;
    }
+   .col-md-3 {
+      width: 33%;
+    }
   .col-md-4 {
      width: 40%;
    }
