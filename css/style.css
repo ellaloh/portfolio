@@ -111,7 +111,7 @@ a {
 }
 a:focus {
   color: #ffffff;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: bold; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
   color: #686868;
@@ -132,6 +132,7 @@ a:hover {
 .button:hover {
   background-color: #ffffff;
   color: #000000;
+  border: 1px solid #000000;
   font-weight: 500;
   text-decoration: none;
 }
