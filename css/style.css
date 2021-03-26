@@ -85,14 +85,12 @@ h5 {
   padding: 0 50px;
   margin: 10px 20px;
 }
-h6 {
+h8 {
+  font-family: 'Roboto Slab', serif;
+  color: #000000;
   background-color: transparent;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2.8em;
-  font-weight: 500;
-  line-height: 0;
-  color: #B8B8B8;
-  text-align: left;
+  font-size: 2.15em;
+  line-height: 2.2;
 }
 h7 {
   background-color: transparent;
@@ -103,7 +101,6 @@ h7 {
   color: #F3D257;
   text-align: left;
 }
-
 a {
   color: #686868;
   text-decoration: none; /* No underlining */
@@ -219,7 +216,7 @@ a:hover {
   line-height: 1.6;
   color: gray;
 }
-#hero h2, h3, h4  {
+#hero h2, h4  {
   text-align: center;
 }
 #hero h1  {
