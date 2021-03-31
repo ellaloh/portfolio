@@ -254,7 +254,7 @@ selector {
 .navbar {
   background-color: transparent;
   color: #000000;
-  margin: 10px; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 12px; /* No spacing to top and bottom and auto spacing to left and right */
   position: relative; /* Set the navbar to fixed position */
   font-size: 17px;
   font-weight: 500;
@@ -337,6 +337,58 @@ nav > ul {
  padding: 0;
  margin: 0;
 }
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -349,7 +401,7 @@ Medium devices (640px and larger)
   }
   nav > ul > li > a {
     background-color: transparent;
-    padding: 0 25px;
+    padding: 5px 25px;
     font-weight: 500;
     float: right;
     display: inline-block;

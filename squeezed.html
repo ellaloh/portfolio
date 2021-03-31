@@ -25,7 +25,7 @@
       <ul class="navbar">
         <li><a href="index.html">Work</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="about.html" onclick="menuToggle()">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="javascript:void(0);" class="logo" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
@@ -288,7 +288,11 @@
             </p>
           <div class="row">
             <div class="col-md-6 col-lg-6">
-              <a href="https://www.dropbox.com/s/i6uy9uhkn5wp5eg/2%20User%20Stories-User.png?dl=0" target="_blank">
+              <div class="popup" onclick="myFunction()">
+                  <a href="https://www.dropbox.com/s/i6uy9uhkn5wp5eg/2%20User%20Stories-User.png?dl=0" target="_blank">
+                <span class="popuptext" id="myPopup">Popup text...</span>
+              </div>
+
               <picture>
                 <source media="(min-width: 641px)" srcset="img/Squeezed/User-Stories@1.png">
                 <source media="(max-width: 1440px)" srcset="img/Squeezed/User-Stories@05.png">
