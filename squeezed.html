@@ -288,12 +288,6 @@
             </p>
           <div class="row">
             <div class="col-md-6 col-lg-6">
-              <div class="popup" onclick="myFunction()">
-                  <span class="popuptext" id="myPopup">Popup text...</span>
-              
-                </span>
-
-
               <picture>
                 <source media="(min-width: 641px)" srcset="img/Squeezed/User-Stories@1.png">
                 <source media="(max-width: 1440px)" srcset="img/Squeezed/User-Stories@05.png">
@@ -302,12 +296,22 @@
               </div>
           </div>
           <div class="col-md-6 col-lg-6">
-            <a href="https://www.dropbox.com/s/725zbeofntnki7k/2%20User%20Story%20Mapping.png?dl=0" target="_blank">
               <picture>
                 <source media="(min-width: 641px)" srcset="img/Squeezed/Visual-Graph@1.png">
                 <source media="(max-width: 1440px)" srcset="img/Squeezed/Visual-Graph@05.png">
                 <img src="img/Squeezed/Visual-Graph@1.png" alt="Visual Representation">
-              </picture></a>
+              </picture>
+              <!-- Trigger/Open The Modal -->
+              <img id="clickable-img" src="img/Squeezed/Visual-Graph@1.png" class="clickable-img" alt="Visual Graph" onclick="showModalWithImage('img/Squeezed/Visual-Graph-Full.png')" />
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
         </div>
       </div>
           <h2>
