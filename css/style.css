@@ -367,8 +367,8 @@ nav > ul {
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
-  font-weight: none;
+  font-size: 32px;
+  font-weight: normal;
 }
 .close:hover,
 .close:focus {
@@ -439,6 +439,8 @@ Medium devices (640px and larger)
    .col-md-8 {
        width: 70%;
    }
+   .modalImage {
+      width: 100%;
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
