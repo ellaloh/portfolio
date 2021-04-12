@@ -184,8 +184,8 @@
                   <h8>
                     Think
                   </h8>
-          <p>
-          Competitive Analysis
+          <p><a href="#competitive">
+          Competitive Analysis</a>
           <br>User Stories
           <br>Surveys & Interviews
           </p>
@@ -227,7 +227,7 @@
       </div><!-- end first column -->
     </div><!-- open second column (used for text) -->
   </div>
-        <h2>
+        <h2 id="competitive">
           Competitive Analysis
         </h2>
           <p>
@@ -288,12 +288,19 @@
             </p>
           <div class="row">
             <div class="col-md-6 col-lg-6">
-              <picture>
-                <source media="(min-width: 641px)" srcset="img/Squeezed/User-Stories@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/User-Stories@05.png">
-                <img src="img/Squeezed/User-Stories@1.png" alt="User Stories">
-              </picture></a>
+              <!-- Trigger/Open The Modal -->
+              <img id="clickable-img" src="img/Squeezed/User-Stories@1.png" class="clickable-img" alt="Visual Graph" onclick="showModalWithImage('img/Squeezed/User-Stories-Full.png')" />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="modalImage">
+                </div>
               </div>
+            </div>
           <div class="col-md-6 col-lg-6">
               <!-- Trigger/Open The Modal -->
               <img id="clickable-img" src="img/Squeezed/Visual-Graph@1.png" class="clickable-img" alt="Visual Graph" onclick="showModalWithImage('img/Squeezed/Visual-Graph-Full.png')" />
@@ -319,7 +326,7 @@
           <div class="col-md-6">
             <picture>
               <source media="(min-width: 640px)" srcset="img/Squeezed/survey-1@1.png">
-              <source media="(max-width: 1440px)" srcset="img/Squeezed/survey-1@05.png">
+              <source media="(max-width: 1440px)" srcset="img/Squeezed/survey-1@1.png">
               <img src="img/Squeezed/survey-1@1.png" alt="survey intro">
             </picture>
           <h3>
@@ -341,7 +348,7 @@
             <div class="col-md-6">
               <picture>
                 <source media="(min-width: 641px)" srcset="img/Squeezed/survey-2@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/survey-2@05.png">
+                <source media="(max-width: 1440px)" srcset="img/Squeezed/survey-2@1.png">
                 <img src="img/Squeezed/survey-2@1.png" alt="survey intro">
               </picture>
             </div>
@@ -354,13 +361,20 @@
               Results were then compiled into an affinity map with key themes and overlapping interests.
             </p>
           <div class="row">
-            <div class="col-md-6 col-lg-6">
-              <picture>
-                <source media="(min-width: 641px)" srcset="img/Squeezed/affinitymap@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/affinitymap@05.png">
-                <img src="img/Squeezed/affinitymap@1.png" alt="Affinity Map">
-              </picture>
-          </div>
+          <div class="col-md-6 col-lg-6">
+              <!-- Trigger/Open The Modal -->
+              <img id="clickable-img" src="img/Squeezed/affinitymap@1.png" class="clickable-img" alt="Affinity Map" onclick="showModalWithImage('img/Squeezed/Affinity-Map-Full.png')" />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
             <div class="col-md-6 col-lg-6">
           <h3>
             Key Quotes
@@ -400,23 +414,34 @@
               the behaviours, needs and goals of the target audience using real data.
             </p>
     <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <a href="https://www.dropbox.com/s/f9oi24dcn0fm4ri/Matias-1.png?dl=0" target="_blank">
-              <picture>
-                <source media="(min-width: 641px)" srcset="img/Squeezed/Matias-1@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/Matias-1@05.png">
-                <img src="img/Squeezed/Matias-1@1.png" alt="Matias Persona">
-              </picture>
-        </a>
-    </div>
+              <div class="col-md-6 col-lg-6">
+                  <!-- Trigger/Open The Modal -->
+                  <img id="clickable-img" src="img/Squeezed/Matias-1-Full.png" class="clickable-img" alt="Affinity Map" onclick="showModalWithImage('img/Squeezed/Matias-1-Full.png')" />
+
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="modalImage">
+                    </div>
+                  </div>
+                </div>
     <div class="col-md-6 col-lg-6">
-      <a href="https://www.dropbox.com/s/09u4ia1oeauxz7f/Whitney-1.png?dl=0" target="_blank">
-              <picture>
-                <source media="(min-width: 641px)" srcset="img/Squeezed/Whitney-1@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/Whitney-1@05.png">
-                <img src="img/Squeezed/Whitney-1@1.png" alt="Whitney Persona">
-              </picture>
-      </a>
+                  <!-- Trigger/Open The Modal -->
+                  <img id="clickable-img" src="img/Squeezed/Whitney-1-Full.png" class="clickable-img" alt="Whitney Persona" onclick="showModalWithImage('img/Squeezed/Whitney-1-Full.png')" />
+
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="modalImage">
+                    </div>
+                  </div>
+                </div>
   </div>
 </div>
           <h2>
@@ -429,36 +454,59 @@
             </p>
           <div class="row">
             <div class="col-md-6 col-lg-6">
-              <a href="https://www.dropbox.com/s/zkxvjhwd83de4fp/Matias-2.png?dl=0" target="_blank">
-              <picture>
-                <source media="(min-width: 641px)" srcset="img/Squeezed/Matias-2@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/Matias-2@05.png">
-                <img src="img/Squeezed/Matias-2@1.png" alt="Matias User Journey">
-              </picture>
-              </a>
-            </div>
+                  <!-- Trigger/Open The Modal -->
+                  <img id="clickable-img" src="img/Squeezed/Matias-2-Full.png" class="clickable-img" alt="Matias Journey" onclick="showModalWithImage('img/Squeezed/Matias-2-Full.png')" />
+
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="modalImage">
+                    </div>
+                  </div>
+                </div>
             <div class="col-md-6 col-lg-6">
-              <picture>
-                <source media="(min-width: 641px)" srcset="img/Squeezed/Whitney-2@1.png">
-                <source media="(max-width: 1440px)" srcset="img/Squeezed/Whitney-2@05.png">
-                <img src="img/Squeezed/Whitney-2@1.png" alt="Whitney User Journey">
-              </picture>
+              <img id="clickable-img" src="img/Squeezed/Whitney-2-Full.png" class="clickable-img" alt="Whitney Journey" onclick="showModalWithImage('img/Squeezed/Whitney-2-Full.png')" />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
             </div>
           </div>
         <div class="row">
           <div class="col-md-6 col-lg-6">
-            <picture>
-              <source media="(min-width: 641px)" srcset="img/Squeezed/Matias-3@1.png">
-              <source media="(max-width: 1440px)" srcset="img/Squeezed/Matias-3@05.png">
-              <img src="img/Squeezed/Matias-3@1.png" alt="Matias User Flow">
-            </picture>
+            <img id="clickable-img" src="img/Squeezed/Matias-3-Full.png" class="clickable-img" alt="Matias Flow" onclick="showModalWithImage('img/Squeezed/Matias-3-Full.png')" />
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+              </div>
+            </div>
           </div>
         <div class="col-md-6 col-lg-6">
-            <picture>
-              <source media="(min-width: 641px)" srcset="img/Squeezed/Whitney-3@1.png">
-              <source media="(max-width: 1440px)" srcset="img/Squeezed/Whitney-3@05.png">
-              <img src="img/Squeezed/Whitney-3@1.png" alt="Whitney User Flow">
-            </picture>
+          <img id="clickable-img" src="img/Squeezed/Whitney-3-Full.png" class="clickable-img" alt="Whitney Flow" onclick="showModalWithImage('img/Squeezed/Whitney-3-Full.png')" />
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="modalImage">
+            </div>
+          </div>
         </div>
       </div>
           <h2>
@@ -467,36 +515,54 @@
           <div class="row">
             <div class="col-md-3">
               <p>
-                By analyzing the User Personas, User Journeys and User Flows, I created a sitemap and the
-                information architecture for the app.
+                By analyzing the User Personas, User Journeys and User Flows, I organized that Information
+                into a site map.
               </p>
-          <picture>
-            <source media="(min-width: 641px)" srcset="img/Squeezed/Site-Map.png">
-            <source media="(max-width: 1400px)" srcset="img/Squeezed/Site-Map.png">
-            <img src="img/Squeezed/Site-Map.png" alt="Site Map Original">
-          </picture>
-      </div>
+              <img id="clickable-img" src="img/Squeezed/Site-Map-Before.png" class="clickable-img" alt="Site Map Before" onclick="showModalWithImage('img/Squeezed/Site-Map-Before.png')" />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
           <div class="col-md-3">
-          <picture>
-            <source media="(min-width: 641px)" srcset="img/Squeezed/card-sort.png">
-            <source media="(max-width: 1440px)" srcset="img/Squeezed/card-sort.png">
-            <img src="img/Squeezed/card-sort.png" alt="Card Sort">
-          </picture>
-          <p>
-            I validated and refined my sitemap with a closed card sort to determine whether my
-            current categories were valid. There were a few areas that revealed some insights
-            into how I should change the navigation to make it clearer for users.
-          </p>
+            <p>
+              I validated and refined my sitemap with a <mark> closed card sort </mark> to determine whether my
+              current categories were valid. There are areas that reveals how navigation can be made
+              clearer for users.
+            </p>
+            <img id="clickable-img" src="img/Squeezed/Card-Sort-Full.png" class="clickable-img" alt="Whitney Flow" onclick="showModalWithImage('img/Squeezed/Card-Sort-Full.png')" />
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
         </div>
+      </div>
+    </div>
         <div class="col-md-3">
           <p>
             As a result, I revised my sitemap to better reflect the perspectives of my users.
           </p>
-          <picture>
-            <source media="(min-width: 641px)" srcset="img/Squeezed/Site-Map-Rvsd.png">
-            <source media="(min-width: 1440px)" srcset="img/Squeezed/Site-Map-Rvsd.png">
-            <img src="img/Squeezed/Site-Map-Rvsd.png" alt="Site Map Rvsd">
-          </picture>
+          <img id="clickable-img" src="img/Squeezed/Rvsd-Site-Map.png" class="clickable-img" alt="Whitney Flow" onclick="showModalWithImage('img/Squeezed/Site-Map-After.png')" />
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="modalImage">
+            </div>
+          </div>
         </div>
       </div>
           <h2>
@@ -527,9 +593,13 @@
             <source media="(min-width: 641px)" srcset="img/Squeezed/Mid-Fidelity@1.png">
             <img src="img/Squeezed/Mid-Fidelity@1.png" alt="Mid-Fidelity Wireframe">
           </picture>
+          <div class="row">
+          <div class="col-md-6">
           <h3>
             High-Fidelity Wireframes
           </h3>
+        </div>
+          <div class="col-md-6">
             <div class="social">
             <i>
               Vectors on
@@ -540,7 +610,10 @@
               Illustrations on
             </i>
               <img src="img/Squeezed/icons/Adobe-CC.png" alt="Adobe PS icon">
+              <br>
+                <br>
         </div>
+      </div>
           <picture>
             <source media="(min-width: 641px)" srcset="img/Squeezed/High-Fidelity.png">
             <img src="img/Squeezed/High-Fidelity.png" alt="High-Fidelity Wireframe">

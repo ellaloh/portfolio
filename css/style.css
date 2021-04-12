@@ -67,7 +67,7 @@ h2 {
 h3 {
   font-size: 1.15em;
   font-weight: 600;
-  padding-left: 9px;
+  padding-left: 0;
 }
 h4 {
   font-size: 0.85em;
@@ -109,7 +109,7 @@ a {
 a:focus {
   background-color: transparent;
   color: #ffffff;
-  font-weight: bold; /* Underlining when hovering over a link */
+  font-weight: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
   background-color: transparent;
@@ -342,7 +342,7 @@ nav > ul {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 250px; /* Location of the box */
+  padding-top: 150px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -355,8 +355,7 @@ nav > ul {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
+  padding: 10px;
   width: 80%;
 }
 /* Img */
@@ -441,26 +440,12 @@ Medium devices (640px and larger)
    }
    .modalImage {
       width: 100%;
+    }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {\
-  nav {
-    width: auto;
-    float: left;
-    margin-top: 4px;
-
-  [class*="col-lg"] { /* Specifies a 6 grid column, md=medium, 6=column span */
-  padding: 0 10px;
-  float: left;
-  }
-  .col-lg-3 {
-     width: 33%;
-   }
-   .col-lg-6 {
-     width: 50%;
-   }
-
+@media only screen and (min-width: 1024px) {
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
