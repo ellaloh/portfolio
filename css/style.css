@@ -79,11 +79,14 @@ h5 {
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  line-height: 3.2;
+  line-height: 1.6;
   color: #000000;
   text-align: left;
-  padding: 0 50px;
-  margin: 10px 20px;
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 h8 {
   font-family: 'Roboto Slab', serif;
@@ -206,7 +209,7 @@ a:hover {
  }
 #hero span  {
   background-color: transparent;
-  padding: 0;
+  padding: 20px 0;
   width: 100%;
   display: block;
   text-align: left;
@@ -235,8 +238,11 @@ a:hover {
   padding-right: 10px;
 }
 .logo.brand {
-  max-width: 55px;
-  padding: 10px 5px;
+  max-width: 70px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 0;
   float: left;
 }
   .number.bullet {
