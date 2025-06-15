@@ -193,7 +193,7 @@ a:hover {
 .anchor-menu {
   
   position: static; /* or just remove the position rule */
-  margin-top: 10px;  
+  margin-top: 20px;  
   padding: 0px;
   width: 200px;
   background-color: #ffffff;
