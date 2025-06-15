@@ -223,8 +223,12 @@ a:hover {
   padding: 40px;
 }
 
-section {
-  margin-bottom: 100px;
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 80px; /* adjust based on your header height */
 }
 
 
