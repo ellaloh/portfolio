@@ -30,6 +30,7 @@ header {
   padding: 10px 0 4px;
   display: inline-block; width: 100%;
   position:relative;
+  overflow: hidden
 }
 img {
   max-width: 100%;
@@ -192,7 +193,7 @@ a:hover {
 .anchor-menu {
   
   position: static; /* or just remove the position rule */
-  margin-top: 0;  
+  margin-top: 10px;  
   padding: 0px;
   width: 200px;
   background-color: #ffffff;
