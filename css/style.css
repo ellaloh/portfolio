@@ -182,7 +182,7 @@ a:hover {
   padding: 0 50px;
   overflow: hidden;
   display: flex;
-  min-height: 100vh;/* */
+  min-height: auto;/* */
 }
 .row {
   margin: 40px 5px; /* 15px top and bottom, 0 left and right */
@@ -193,7 +193,7 @@ a:hover {
   
   position: static; /* or just remove the position rule */
   margin-top: 0;  
-  padding: 20px;
+  padding: 0px;
   width: 200px;
   background-color: #ffffff;
 }
@@ -227,7 +227,7 @@ html {
 }
 
 [id] {
-  scroll-margin-top: 20px; /* adjust based on your header height */
+  scroll-margin-top: 60px; /* adjust based on your header height */
 }
 
 
