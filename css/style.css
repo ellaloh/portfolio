@@ -200,6 +200,12 @@ a:hover {
   margin: 40px;
 }
 
+.anchor-menu li {
+  display: block;      /* Ensures vertical stacking */
+  width: 100%;         /* Optional: forces full width of the menu */
+  margin-bottom: 0.5rem; /* Optional: adds spacing between items */
+}
+
 .page-wrapper {
   display: flex;
 }
