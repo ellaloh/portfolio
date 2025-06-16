@@ -199,6 +199,10 @@ a:hover {
   border-right: 1px solid #eee;
 }
 
+.page-wrapper {
+  display: flex;
+}
+
 .anchor-menu ul {
   list-style: none;
   padding-left: 0;
@@ -216,7 +220,7 @@ a:hover {
 }
 
 .content {
-  flex: 1;
+  flex-grow: 1;
   min-width: 0;
 }
 
