@@ -181,6 +181,49 @@ a:hover {
   padding: 0 50px;
   overflow: hidden; /* */
 }
+
+.layout-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.anchor-menu {
+  width: 200px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 100px; /* adjust as needed */
+  padding: 20px;
+  background: #fff;
+  border-right: 1px solid #eee;
+}
+
+.anchor-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.anchor-menu a {
+  display: block;
+  padding: 8px 0;
+  color: #444;
+  text-decoration: none;
+}
+
+.anchor-menu a:hover {
+  color: #000;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+[id] {
+  scroll-margin-top: 80px; /* offset anchor jumps */
+}
+
 .row {
   margin: 40px 5px; /* 15px top and bottom, 0 left and right */
    /* handles the margins the container between columns */
