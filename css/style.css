@@ -181,7 +181,6 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   padding: 0 50px;
-  overflow: hidden;
   display: flex;
   min-height: auto;/* */
 }
