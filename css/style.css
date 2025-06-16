@@ -197,6 +197,7 @@ a:hover {
   padding: 20px;
   background: #fff;
   border-right: 1px solid #eee;
+  margin: 40px;
 }
 
 .page-wrapper {
@@ -222,6 +223,7 @@ a:hover {
 .content {
   flex-grow: 1;
   min-width: 0;
+	  padding-left: 2rem;
 }
 
 [id] {
