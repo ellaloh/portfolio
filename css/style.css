@@ -188,6 +188,10 @@ a:hover {
 .row {
   margin: 40px 5px; /* 15px top and bottom, 0 left and right */
    /* handles the margins the container between columns */
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+  align-items: flex-start;
 }
 
 .anchor-menu {
