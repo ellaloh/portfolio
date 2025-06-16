@@ -197,7 +197,7 @@ a:hover {
   padding: 20px;
   background: #fff;
   border-right: 1px solid #eee;
-  margin: 40px;
+  margin: 40px 0;
   flex-direction: column; 
 }
 
