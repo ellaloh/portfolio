@@ -203,11 +203,17 @@ a:hover {
 .anchor-menu ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+}
+
+.anchor-menu li {
+  display: block; /* Ensures one per line */
+  margin-bottom: 0.5rem; /* Optional spacing */
 }
 
 .anchor-menu a {
   display: block;
-  padding: 8px 0;
+  padding: 0.25rem 0;
   color: #444;
   text-decoration: none;
 }
