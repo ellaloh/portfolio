@@ -198,6 +198,7 @@ a:hover {
   background: #fff;
   border-right: 1px solid #eee;
   margin: 40px;
+  flex-direction: column; 
 }
 
 .anchor-menu li {
