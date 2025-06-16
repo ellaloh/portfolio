@@ -191,12 +191,13 @@ a:hover {
 
 .anchor-menu {
   width: 200px;
-  flex-shrink: 0;
   position: sticky;
-  top: 100px; /* adjust as needed */
-  padding: 20px;
+  top: 120px; /* adjust as needed */
+  padding: 1rem;
   background: #fff;
   border-right: 1px solid #eee;
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
 }
 
 .anchor-menu ul {
@@ -218,10 +219,16 @@ a:hover {
 .content {
   flex: 1;
   min-width: 0;
+  padding-left: 2rem;	
 }
 
 [id] {
   scroll-margin-top: 80px; /* offset anchor jumps */
+}
+
+.page-wrapper {
+  display: flex;
+  align-items: flex-start;
 }
 
 .row {
