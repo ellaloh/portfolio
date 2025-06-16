@@ -213,6 +213,8 @@ a:hover {
 .anchor-menu ul {
   list-style: none;
   padding-left: 0;
+  display: block;
+  column-count: 1 !important;
 }
 
 .anchor-menu a {
