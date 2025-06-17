@@ -217,7 +217,7 @@ a:hover {
 .content {
   flex-grow: 1;
   min-width: 0;
-	  padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 [id] {
@@ -231,6 +231,10 @@ a:hover {
   gap: 20px;
   margin: 40px 0;
   align-items: flex-start;
+  flex: 1 1 0;
+  min-width: 0; 
+   overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .hero.row {
