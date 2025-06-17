@@ -128,9 +128,8 @@ a:hover {
   background-color: #000000;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 500;
-  padding: 8px;
+  padding: 8px 16px;
   border-radius: 30px;
-  width: 130px;
 }
 .button:hover {
   background-color: #ffffff;
