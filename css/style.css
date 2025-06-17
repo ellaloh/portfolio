@@ -459,9 +459,12 @@ Medium devices (640px and larger)
   .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }
-  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
+  [class*="column"], .col, .column { /* Specifies a 6 grid column, md=medium, 6=column span */
   padding: 0 10px;
   float: left;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
   }
   .col-md-1 {
    width: 20%;
@@ -507,7 +510,7 @@ Medium devices (640px and larger)
   }
 
   .image-wrapper:hover .zoom-image {
-  transform: scale(1.1);
+  transform: scale(1.15);
   border-radius: 12px;
   }
 
