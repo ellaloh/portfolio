@@ -494,7 +494,7 @@ Medium devices (640px and larger)
    overflow: hidden;
    width: 100%; /* Fill the parent column */
    height: auto;
-   display: block;
+   display: inline-block;
    }
 
   .zoom-image {
