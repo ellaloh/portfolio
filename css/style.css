@@ -494,19 +494,19 @@ Medium devices (640px and larger)
    overflow: hidden;
    width: 100%; /* Fill the parent column */
    height: auto;
-   display: inline-block;
+   display: block;
    }
 
   .zoom-image {
   width: 100%;
-  max-width: 100%
+  max-width: 100%;
   height: auto;
   display: block;
   box-sizing: border-box;
   transition: transform 0.4s ease;
   }
 
-  image-wrapper:hover .zoom-image {
+  .image-wrapper:hover .zoom-image {
   transform: scale(1.1);
   border-radius: 12px;
   }
