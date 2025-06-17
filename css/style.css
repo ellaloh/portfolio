@@ -217,7 +217,7 @@ a:hover {
 .content {
   flex-grow: 1;
   min-width: 0;
-  padding-left: 2rem;
+	  padding-left: 2rem;
 }
 
 [id] {
@@ -225,16 +225,12 @@ a:hover {
 }
 
 .row {
-  margin: 40px 0; /* 15px top and bottom, 0 left and right */
+  margin: 40px 5px; /* 15px top and bottom, 0 left and right */
    /* handles the margins the container between columns */
   display: flex;
   gap: 20px;
   margin: 40px 0;
   align-items: flex-start;
-  flex: 1 1 0;
-  min-width: 0; 
-   overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .hero.row {
@@ -463,12 +459,9 @@ Medium devices (640px and larger)
   .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }
-  [class*="column"], .col, .column { /* Specifies a 6 grid column, md=medium, 6=column span */
+  [class*="col-"] { /* Specifies a 6 grid column, md=medium, 6=column span */
   padding: 0 10px;
   float: left;
-  flex: 1 1 0;
-  min-width: 0;
-  max-width: 100%;
   }
   .col-md-1 {
    width: 20%;
@@ -484,10 +477,7 @@ Medium devices (640px and larger)
      width: 40%;
    }
    .col-md-6 {
-     
      width: 50%;
-      box-sizing: border-box;
-   
    }
    .col-md-7 {
      width: 60%;
@@ -502,23 +492,19 @@ Medium devices (640px and larger)
    
    .image-wrapper {
    overflow: hidden;
-   max-width: 100%; /* Fill the parent column */
+   width: 100%; /* Fill the parent column */
    height: auto;
-   display: block;
+   display: inline-block;
    }
 
   .zoom-image {
   width: 100%;
-  max-width: 100%;
-  height: auto;
   display: block;
-  box-sizing: border-box;
   transition: transform 0.4s ease;
   }
 
-  .image-wrapper:hover .zoom-image {
-  transform: scale(1.15);
-  border-radius: 12px;
+  image-wrapper:hover .zoom-image {
+  transform: scale(1.1);
   }
 
 /* ==============================
