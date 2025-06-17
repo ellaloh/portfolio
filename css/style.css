@@ -155,20 +155,6 @@ a:hover {
   font-weight: 500;
   border: 1px solid #000000;
 }
-.button.normal {
-  font-size: 15px;
-  background-color: #FFFFFF;
-  color: #000000;
-  font-weight: 500;
-  border: 4px #000000;
-  border-radius: 25px;
-  padding: 15px;
-}
-.button.normal:hover {
-  background-color: #000000;
-  color: #ffffff;
-  font-weight: 600;
-}
 .h1 + paragraph {
   line-height: 0.8;
 }
