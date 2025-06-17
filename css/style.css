@@ -492,7 +492,7 @@ Medium devices (640px and larger)
    
    .image-wrapper {
    overflow: hidden;
-   width: 100%; /* Fill the parent column */
+   max-width: 100%; /* Fill the parent column */
    height: auto;
    display: block;
    }
