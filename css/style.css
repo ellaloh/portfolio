@@ -130,12 +130,15 @@ a:hover {
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
 }
+
+.full-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full viewport height */
+}
+
 .button:hover {
   background-color: #ffffff;
   color: #000000;
