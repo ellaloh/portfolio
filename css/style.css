@@ -123,14 +123,14 @@ a:hover {
   color: #000000;
 }
 .button {
-  font-size: 13px;
+  font-size: 15px;
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #000000;
   color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 8px;
+  font-weight: 500;
+  padding: 20px;
   border-radius: 30px;
-  width: 125px;
+  width: 200px;
 }
 .button:hover {
   background-color: #ffffff;
