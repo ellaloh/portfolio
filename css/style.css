@@ -499,6 +499,8 @@ Medium devices (640px and larger)
 
   .zoom-image {
   width: 100%;
+  max-width: 100%
+  height: auto;
   display: block;
   transition: transform 0.4s ease;
   }
