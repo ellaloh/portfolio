@@ -498,10 +498,11 @@ Medium devices (640px and larger)
 
   .zoom-image {
   width: 100%;
+  display: block;
   transition: transform 0.4s ease;
   }
 
-.zoom-image:hover {
+image-wrapper:hover .zoom-image {
   transform: scale(1.1);
 }
 /* ==============================
