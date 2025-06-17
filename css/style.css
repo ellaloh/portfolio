@@ -490,10 +490,11 @@ Medium devices (640px and larger)
    }
    /* Image Zoom */
    
-   }.image-wrapper {
+   .image-wrapper {
    overflow: hidden;
    width: 100%; /* Fill the parent column */
    height: auto;
+   display: block;
    }
 
   .zoom-image {
@@ -502,9 +503,10 @@ Medium devices (640px and larger)
   transition: transform 0.4s ease;
   }
 
-image-wrapper:hover .zoom-image {
+  image-wrapper:hover .zoom-image {
   transform: scale(1.1);
-}
+  }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
