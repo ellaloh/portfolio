@@ -486,6 +486,7 @@ Medium devices (640px and larger)
    .col-md-6 {
      flex: 1 1 0;
      width: 50%;
+     max-width: 50%;
    }
    .col-md-7 {
      width: 60%;
