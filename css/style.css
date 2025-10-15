@@ -109,6 +109,12 @@ h7 {
   color: #F3D257;
   text-align: left;
 }
+.image-wrapper, .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 a {
   color: #686868;
   text-decoration: none; /* No underlining */
