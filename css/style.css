@@ -109,12 +109,16 @@ h7 {
   color: #F3D257;
   text-align: left;
 }
-.image-wrapper h5, .col-md-6 {
-  text-align: center;
+.image-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.image-wrapper h5 {
+  text-align: center;
+  margin: 0.5rem 0 0 0; /* tweak top/bottom spacing as needed */
+  width: 100%; /* optional if you want text-align to span full width */
 }
 a {
   color: #686868;
