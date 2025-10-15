@@ -109,7 +109,8 @@ h7 {
   color: #F3D257;
   text-align: left;
 }
-.image-wrapper, .col-md-6 {
+.image-wrapper h5, .col-md-6 {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
