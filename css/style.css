@@ -261,6 +261,9 @@ a:hover {
   padding-left: 0;
   float: left;
 }
+.project-description {
+  margin: 0;
+}
   .number.bullet {
   max-width: 70px;
   padding: 10px 18px;
