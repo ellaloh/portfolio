@@ -200,6 +200,9 @@ a:hover {
 .container-image {
   display: flex;
 }
+.caption {
+  margin: 10px;
+}
 .row {
   margin: 40px 5px; /* 15px top and bottom, 0 left and right */
    /* handles the margins the container between columns */
@@ -254,7 +257,6 @@ a:hover {
 .logo {
   max-width: 80px;
   float: left;
-  padding-right: 10px;
 }
 .logo.brand {
   display: block;
